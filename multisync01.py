@@ -3,7 +3,7 @@
 import os
 import subprocess
 from concurrent import futures
-from time import time
+#from time import time todo: add timing feature
 
 def parseArgs():
 	import argparse
