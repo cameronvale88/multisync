@@ -18,8 +18,6 @@ def parseArgs():
 
 def test(source, destination):
 	subprocess.call(['rsync', '-avz', str(source), str(destination) ])
-	#subprocess.call(['rsync', '-avz', '--delete', str(x), "/media/administrator/56ECA88B1E318047/Documents/" ])
-
 
 
 if __name__=="__main__":
@@ -29,9 +27,7 @@ if __name__=="__main__":
 	t=os.listdir(source)
 	for x in t:
 		src=source+x
-
 		executor.submit(test, src, destination)
-
 	executor.shutdown()
  
 
