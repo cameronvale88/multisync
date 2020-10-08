@@ -1,5 +1,5 @@
 # multisync
-A commandline tool that uses parallel processing to speed up rsync untility.
+A command-line tool that uses parallel processing to speed up rsync utility.
 
 Requirements: os, subprocess, concurrent
 
